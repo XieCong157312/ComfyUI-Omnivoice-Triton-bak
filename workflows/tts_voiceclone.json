@@ -1,0 +1,31 @@
+{
+  "1": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "reference_voice.wav"
+    }
+  },
+  "2": {
+    "class_type": "OmnivoiceTTSVoiceClone",
+    "inputs": {
+      "text": "Hello, this is an OmniVoice Triton voice clone test.",
+      "ref_audio": [
+        "1",
+        0
+      ],
+      "runner_mode": "hybrid",
+      "ref_text": "",
+      "language": "auto"
+    }
+  },
+  "3": {
+    "class_type": "SaveAudio",
+    "inputs": {
+      "audio": [
+        "2",
+        0
+      ],
+      "filename_prefix": "omnivoice_triton_voiceclone"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "1": {
+    "class_type": "OmnivoiceTTSVoiceDesign",
+    "inputs": {
+      "text": "Hello, this is an OmniVoice Triton voice design test.",
+      "instruct": "female, young adult, high pitch",
+      "runner_mode": "hybrid",
+      "language": "auto"
+    }
+  },
+  "2": {
+    "class_type": "SaveAudio",
+    "inputs": {
+      "audio": [
+        "1",
+        0
+      ],
+      "filename_prefix": "omnivoice_triton_voice_design"
+    }
+  }
+}

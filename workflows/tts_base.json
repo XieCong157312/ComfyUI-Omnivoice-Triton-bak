@@ -1,0 +1,26 @@
+{
+  "1": {
+    "class_type": "OmnivoiceTTSAuto",
+    "inputs": {
+      "text": "안녕하세요, OmniVoice Triton TTS 테스트입니다.",
+      "runner_mode": "base",
+      "num_step": 32,
+      "guidance_scale": 2.0,
+      "class_temperature": 0.0,
+      "language": "ko",
+      "model_id": "k2-fsa/OmniVoice",
+      "dtype": "fp16",
+      "device": "cuda"
+    }
+  },
+  "2": {
+    "class_type": "SaveAudio",
+    "inputs": {
+      "audio": [
+        "1",
+        0
+      ],
+      "filename_prefix": "omnivoice_triton_base"
+    }
+  }
+}

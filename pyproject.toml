@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-omnivoice-triton"
+description = "ComfyUI node wrapping omnivoice-triton for Triton-fused OmniVoice TTS"
+version = "0.1.0"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.12"
+dependencies = ["omnivoice-triton>=0.1.0"]
+
+[project.urls]
+Repository = "https://github.com/newgrit1004/ComfyUI-Omnivoice-Triton"
+
+[tool.comfy]
+PublisherId = "newgrit1004"
+DisplayName = "Omnivoice Triton TTS"
+Icon = ""

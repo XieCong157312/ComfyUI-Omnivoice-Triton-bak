@@ -1,0 +1,10 @@
+# Intentionally empty - all dependencies are installed by install.py.
+#
+# WHY: ComfyUI-Manager runs `pip install <line>` for each line of this file
+# BEFORE executing install.py. Listing `omnivoice-triton` or its torch-sensitive
+# dependencies (`omnivoice`, `triton`, `sageattention`, `transformers`) here
+# would let pip's resolver swap ComfyUI's CUDA torch for a CPU-only wheel,
+# breaking GPU acceleration.
+#
+# install.py installs those packages with --no-deps to protect torch. Keep
+# this file empty (comments only) so Manager's requirements pass is a no-op.
